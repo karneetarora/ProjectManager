@@ -17,8 +17,8 @@ public class Date
    {
       //this is a constructor
    }      
-   
-      public boolean isValid()
+	
+   public boolean isValid()
    {
      switch(month)
      {
