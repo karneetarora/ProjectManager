@@ -18,10 +18,70 @@ public class Date
       //this is a constructor
    }      
    
-   public boolean isValid()
+      public boolean isValid()
    {
-       
-   }
+     switch(month)
+     {
+	   case(Month.JAN):
+	   case(Month.MAR):
+	   case(Month.MAY):
+	   case(Month.JUL):
+	   case(Month.OCT):
+	   case(Month.DEC):
+	     if(day < 0 | day > 31) 
+	     {
+		   return false;  
+	     }
+	     break; 
+	   case(Month.APR):
+	   case(Month.JUN):
+	   case(Month.AUG):
+	   case(Month.SEP):
+	   case(Month.NOV):
+	     if(day < 0 | day > 30)
+	     {
+	       return false;
+	     }
+	     break; 
+       case(Month.FEB):
+	     if(year % 4 == 0) 
+	     { 
+	       if(year % 100 == 0)
+	       {
+	         if(year % 400 == 0) 
+	         {
+	    	   if(day < 0 | day > 29) 
+	    	   {
+	    	     return false;  	 
+	    	   }
+	    	 }
+	    	 else
+	    	 { 
+	    	   if(day < 0 | day > 28) 
+	    	   {
+		         return false;  	 
+		       } 
+	    	 }
+	       }  
+	       else
+	       { 
+	         if(day < 0 | day > 29) 
+	         {
+	    	   return false;  	 
+	         }
+	       }
+	    }
+	    else
+	      if(day < 0 | day > 28) 
+	      {
+		    return false; 	 
+		  }  
+	    break; 
+      default:
+    	return false;  	  
+     }
+     return true; 
+   }  
    
    @Override
    public String toString()
