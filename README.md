@@ -3,6 +3,7 @@
 About: The objective of the program is to create a growable container for a Team so it could hold Team Member objects and their specific data field entries, name and start date. The program takes in commands which will either Add, Remove, or Output the team.
 
   Commands - 
+  
     Add ( A ) - add a new team member; input ex: "A John 12/12/2012"
   
     Remove ( R ) - remove a team member; input ex: "R John 12/12/2012"
