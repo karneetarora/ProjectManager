@@ -1,6 +1,6 @@
 # ProjectManager
 
-About: The objective of the program is to create a growable container for a Team so it could hold Team Member objects and their specific data field entries, name and start date. The program takes in commands which will either Add, Remove, or Output the team.
+About: The objective of the program is to create a growable container for a Team so it could hold Team Member objects and their specific data field entries, name and start date. The program takes in commands such as: Add, Remove, Print or Quit. 
 
   Commands - 
   
