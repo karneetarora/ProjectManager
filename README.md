@@ -17,10 +17,16 @@ Background: This project is an assignment for Software Methodology (CS213) and w
 
 
 Break-Down: 
+
 Date Class - parses through a String and creates a date object. Prior to the creation of the date object, the fields of the date are        checked to ensure it is a proper date. The class returns the an object date. 
+
 Month Class - common constants used in the other classes, predefined by the professor. 
+
 Prog1 Class - calls the projectManager class to start the program. 
+
 ProjectManager Class - parses through the input in, which is in the form of a String, and carries out the appropriate commands and calls    the date class to check the date input. 
+
 Team Class - container class that holds the teamMembers in an expadable array. 
+
 TeamMember - saves the field entries of a team member. 
 
